@@ -11,29 +11,59 @@ border-color:black;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    animation-name:spin;
 }
-#spinningHamburger:hover{
-    animation-duration: 2s;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+#sHBarTop{
+    position:relative;
 }
-.spin{
-    animation-duration: 2s;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-  @keyframes spin {
-    from {
-    transform:rotate(0deg)
-    }
-  
-    to {
-        transform:rotate(360deg);
-    }
-  }
+#spinningHamburger:hover > #sHBarTop {
+    animation-duration:1s;
+    animation-delay:0.5s;
+    animation-name:clapDown; }
+#sHBarMid{
+    position:relative;
+} 
+#spinningHamburger:hover > #sHBarMid { 
+    animation-duration:1s;
+    animation-delay:0.6s;
+    animation-name:midSqueeze;
+ }
+ #sHBarBott{
+     position:relative;
+ }
+#spinningHamburger:hover > #sHBarBott { 
+    animation-duration:1s;
+    animation-delay:0.5s;
+    animation-name:clapUp; }
+@keyframes clapDown {
+    0% {
+        top: 0px;
+      }
+      50% {
+        top:2em;
+      }
+      100% {
+        top: 0px;
+}}
+@keyframes midSqueeze{
+       0% {
+       height:10%
+      }
+      50% {
+        height:1%        
+      }
+      100% { height:10%;
+       
+}}
+@keyframes clapUp {
+    0% {
+        bottom: 0px;
+      }
+      50% {
+        bottom:2em;
+      }
+      100% {
+        bottom: 0px;
+}}
 .sHBar{
 margin:5%;
 width:60%;
@@ -42,5 +72,8 @@ border-radius:5%;
 background-color:grey;
 }
 #sHBarTop{
-   
+}
+#sHBarMid{
+}
+#sHBarBott{
 }
