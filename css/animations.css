@@ -5,7 +5,8 @@ height:10vw;
 border-style:dotted;
 border-color:black;
 }
-#spinningHamburger{
+#squeezingHamburger{
+ 
     border-color:teal;
     display:flex;
     flex-direction:column;
@@ -15,54 +16,61 @@ border-color:black;
 #sHBarTop{
     position:relative;
 }
-#spinningHamburger:hover > #sHBarTop {
+#squeezingHamburger:hover > #sHBarTop {
+  animation-iteration-count: infinite;
     animation-duration:1s;
-    animation-delay:0.5s;
+    animation-delay:0.2s;
     animation-name:clapDown; }
 #sHBarMid{
     position:relative;
 } 
-#spinningHamburger:hover > #sHBarMid { 
+#squeezingHamburger:hover > #sHBarMid { 
+  animation-iteration-count: infinite;
     animation-duration:1s;
-    animation-delay:0.6s;
+    animation-delay:0.5s;
     animation-name:midSqueeze;
  }
  #sHBarBott{
      position:relative;
  }
-#spinningHamburger:hover > #sHBarBott { 
+#squeezingHamburger:hover > #sHBarBott { 
+  animation-iteration-count: infinite;
     animation-duration:1s;
-    animation-delay:0.5s;
+    animation-delay:0.2s;
     animation-name:clapUp; }
 @keyframes clapDown {
     0% {
-        top: 0px;
+        top: 0%;
+      
       }
+    10% {top:-10%}
       50% {
         top:2em;
+        background-color:rgb(66, 63, 63);
       }
-      100% {
-        top: 0px;
+      100% { 
+        top: 0%;
 }}
 @keyframes midSqueeze{
-       0% {
-       height:10%
-      }
-      50% {
-        height:1%        
-      }
-      100% { height:10%;
+    0%{height:10%;}
+    25%{ height:0%;
+      background-color:rgb(66, 63, 63);}
+
+    100% { height:10%;
        
 }}
 @keyframes clapUp {
     0% {
-        bottom: 0px;
+        bottom: 0%;
+        
       }
+    10% {bottom:-10%;}
       50% {
-        bottom:2em;
+        bottom:20%;
+        background-color:rgb(66, 63, 63);
       }
       100% {
-        bottom: 0px;
+        bottom:0%;
 }}
 .sHBar{
 margin:5%;
@@ -71,7 +79,7 @@ height:10%;
 border-radius:5%;
 background-color:grey;
 }
-#sHBarTop{
+#sHBarTop{ 
 }
 #sHBarMid{
 }
