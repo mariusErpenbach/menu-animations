@@ -1,10 +1,46 @@
 .iconHolder{
 margin:5%;
-width:10vw;
-height:10vw;
+width:2vw;
+height:2vw;
 border-style:dotted;
 border-color:black;
 }
+
+#movingAnglesRight{
+  display:flex;
+  flex-direction:row;
+}
+#movingAnglesRight >i{
+  margin:0;
+  font-size:100%;
+}
+#rightAngleOne:hover {
+animation-name:pop;
+animation-duration:0.5s;
+animation-delay:0s;
+animation-iteration-count: infinite;
+}
+#rightAngleTwo{
+  animation-name:pop;
+  animation-duration:0.5s;
+  animation-delay:0s;
+  animation-iteration-count: infinite;
+}
+#rightAngleThree{
+  animation-name:pop;
+  animation-duration:0.5s;
+  animation-delay:0s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+/* */
 #squeezingHamburger{
  
     border-color:teal;
@@ -45,7 +81,7 @@ border-color:black;
       }
     10% {top:-10%}
       50% {
-        top:2em;
+        top:20%;
         background-color:rgb(66, 63, 63);
       }
       100% { 
