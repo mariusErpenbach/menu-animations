@@ -20,6 +20,14 @@
         <div id="sHBarMid" class="sHBar"></div>
         <div id="sHBarBott" class="sHBar"></div>    
     </div>
-    <div id="movingChocolatePads" class="iconHolder"></div>
+    <div id="movingChocolatePads" class="iconHolder">
+        <script>
+            for (i=0;i<16;i++){
+                newPad = document.createElement("div");
+                newPad.classList="movingPad";
+                document.getElementById("movingChocolatePads").appendChild(newPad);
+            }
+        </script>
+    </div>
 </body>
 </html>
