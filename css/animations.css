@@ -125,10 +125,10 @@ background-color:grey;
   width:2vw;
 }
 .movingPad{
-  flex:1 1 4%;
+  flex:1 0 15%;
   background-color:grey;
   border-style:solid;
   border-color:white;
   height:auto;
-  width:6.25%;
+
 }
